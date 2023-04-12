@@ -1,0 +1,109 @@
+/* Define CSS variables using :root to allow for easy changes throughout the document */
+:root {
+    --main-color: rgb(29,33,253);
+    --main-gradient: linear-gradient(90deg, rgba(4,7,152,1) 38%, rgba(230,14,14,0.9977240896358543) 39%, rgba(235,97,97,1) 95%, rgba(242,232,232,1) 99%);
+}
+
+/* Set font size to 62.5% to allow for easy conversion from pixels to rems */
+html {
+    font-size: 62.5%;
+}
+
+/* Set font size to 1.6rem and apply background color and image to the body */
+body {
+    font-size: 1.6rem;
+    background: var(--main-color);
+    background: var(--main-gradient);
+    background-image: url('assets/Pepsi_form.png');
+}   
+
+/* Style the header */
+.header {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* Style the menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 0;
+}
+
+/* Set the width of each menu item to 100% */
+.menu > li {
+    width: 100%;
+}
+
+/* Style the home menu item */
+.home {
+    color: #0055cc;
+}
+
+/* Style the menu items when hovered over */
+.home:hover, .about:hover, .contact:hover, .product:hover {
+    color: #0055cc;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    font-size: 2rem; 
+    background-color: black;
+    color: white;
+}
+
+/* Style links within the document */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style links when hovered over */
+a:hover {
+    padding: 0 2rem;
+}
+
+/* Style the menu items in the footer when hovered over */
+footer > menu > li:hover {
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+/* Style the social media menu in the footer */
+footer > menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style the social media menu in the footer */
+footer > .socialMediaMenu {
+    width: 30%;
+    margin: auto;
+}
+
+/* Style the contact menu in the footer */
+footer > .contactMenu {
+    width: 50%;
+    margin: auto;
+}
+
+/* Create a flex container for the items */
+.items {
+    display: flex;
+}
+ 
+/* Style the product motto */
+.moto {
+    font-size: 7rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin: auto;
+}
