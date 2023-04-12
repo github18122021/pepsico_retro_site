@@ -1,0 +1,108 @@
+/* Define the main color and gradient */
+:root {
+    --main-color: rgb(29,33,253);
+    --main-gradient: linear-gradient(90deg, rgba(4,7,152,1) 38%, rgba(230,14,14,0.9977240896358543) 39%, rgba(235,97,97,1) 95%, rgba(242,232,232,1) 99%);
+}
+
+/* Set the base font size for the page */
+html {
+    font-size: 62.5%;
+}
+
+/* Set the font size and background for the body */
+body {
+    font-size: 1.6rem;
+    background: var(--main-color);
+    background: var(--main-gradient);
+}   
+
+/* Style for the header section */
+.header {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* Style for the menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 0;
+}
+
+/* Set the width of each menu item to 100% */
+.menu > li {
+    width: 100%;
+}
+
+/* Style for the about link */
+.about {
+    color: #0055cc;
+}
+
+/* Style for the hover effect on the menu items */
+.home:hover, .about:hover, .contact:hover, .product:hover {
+    color: #0055cc;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+/* Style for the footer section */
+footer {
+    text-align: center;
+    background-color: black;
+    font-size: 2rem; 
+}
+
+/* Style for links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for hover effect on links */
+a:hover {
+    padding: 0 2rem;
+}
+
+/* Style for hover effect on menu items in footer */
+footer > menu > li:hover {
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+/* Style for the menu in the footer */
+footer > menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+/* Style for the social media menu in the footer */
+footer > .socialMediaMenu {
+    width: 30%;
+    margin: auto;
+}
+
+/* Style for the contact menu in the footer */
+footer > .contactMenu {
+    width: 50%;
+    margin: auto;
+}
+
+/* Style for the motto */
+.moto {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+/* Style for paragraphs */
+p {
+    color: white;
+    font-size: 2.8rem;
+}

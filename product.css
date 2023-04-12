@@ -1,0 +1,161 @@
+/* Define custom CSS variables */
+:root {
+    --main-color: rgb(29,33,253);
+    --main-gradient: linear-gradient(90deg, rgba(4,7,152,1) 38%, rgba(230,14,14,0.9977240896358543) 39%, rgba(235,97,97,1) 95%, rgba(242,232,232,1) 99%);
+}
+
+/* Set the base font size for the document */
+html {
+    font-size: 62.5%;
+}
+
+/* Set background color and image for the entire page */
+body {
+    font-size: 1.6rem;
+    background: var(--main-color);
+    background: var(--main-gradient);
+    background-image: url('../assets/Pepsi_form.png');
+}
+
+/* Style the header section */
+.header {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* Style the main menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 0;
+}
+
+/* Style the individual menu items */
+.menu > li {
+    width: 100%;
+}
+
+/* Style the product section */
+.product {
+    color: #0055cc;
+}
+
+/* Style the hover effect for menu items */
+.home:hover, .about:hover, .contact:hover, .product:hover {
+    color: #0055cc;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+/* Style the footer section */
+footer {
+    text-align: center;
+    background-color: black;
+    font-size: 2rem; 
+    color: white;
+}
+
+/* Style links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style hover effect for links */
+a:hover {
+    padding: 0 2rem;
+}
+
+/* Style hover effect for footer menu items */
+footer > menu > li:hover {
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+/* Style the footer menu */
+footer > menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style the social media menu */
+footer > .socialMediaMenu {
+    width: 30%;
+    margin: auto;
+}
+
+/* Style the contact menu */
+footer > .contactMenu {
+    width: 50%;
+    margin: auto;
+}
+
+/* Style the item grid */
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* creates three columns with equal width */
+    margin: auto;
+    border: 2px solid black;
+    background-color: white;
+}
+
+/* Style item 1 */
+.item-1 {
+    border: 2px solid black;
+    display: flex;
+    font-size: 3rem;
+    color: #0055cc;
+}
+
+/* Style button 1 */
+.btn-1 {
+    display: block;
+    margin: auto;
+}
+
+/* Style item 2 */
+.item-2 {
+    border: 2px solid black;
+    display: flex;
+    font-size: 3rem;
+    color: #0055cc;
+}
+
+/* Style button 2 */
+.btn-2 {
+    display: block;
+    margin: auto;
+}
+
+/* Style item 3 */
+.item-3 {
+    border: 2px solid black;
+    display: flex;
+    font-size: 3rem;
+    color: #0055cc;
+}
+
+/* Style button 3 */
+.btn-3 {
+    display: block;
+    margin: auto;
+}
+
+/* Style item 4 */
+.item-4 {
+    border: 2px solid black;
+    display: flex;
+    font-size: 3rem;
+    color: #0055cc;
+}
+
+/* Style button 4 */
+.btn-4 {
+    display: block;
+    margin: auto;
+}

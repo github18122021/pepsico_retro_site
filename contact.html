@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsico</title>
+    <meta name="author" content="Vrajkumar Bagadiya" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Script for form validation -->
+    <script src="contact.js" defer></script>
+
+    <!-- Stylesheet for form styling -->
+    <link rel="stylesheet" href="./contact.css" />
+</head>
+<body>
+    <!-- Global Header Using Javascript -->
+
+    <main>
+        <!-- Form for ordering Pepsi cans -->
+        <form>
+
+           <!-- Fieldset to group related form elements -->
+           <fieldset>
+
+            <!-- Legend for the fieldset -->
+            <legend>To Book Your Pepsi Cans</legend>
+
+            <!-- Section for first name -->
+            <section class="firstName">
+                <label for="firstName">First Name:</label>
+                <input type="text" required autofocus placeholder="First Name" id="firstName" name="firstName" />
+            </section>
+
+            <!-- Section for last name -->
+            <section class="lastName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" required placeholder="Last Name" id="lastName" name="lastName" />
+            </section>
+
+            <!-- Section for email -->
+            <section class="email">
+                <label for="email">Email:</label>
+                <input type="email" required placeholder="E-mail" id="email" name="email" />
+            </section>
+          
+            <!-- Section for Pepsi can flavors -->
+            <section class="flavours">
+              <label for="flavor">Pepsi Can Flavors:</label>
+              <select id="flavor" name="flavor">
+                <option value="diet">diet pepsi</option>
+                <option value="caffeineFree">caffeine free</option>
+                <option value="dietWildCherry">diet wild cherry</option>
+                <option value="wildCherry">wild cherry</option>
+              </select>
+            </section>
+          
+            <!-- Section for number of orders -->
+            <section class="amount">
+              <label for="quantity">Number of Orders:</label>
+              <input type="number" id="quantity" name="quantity" min="1">
+            </section>
+          
+            <!-- Section for telephone -->
+            <section class="telephone">
+                <label for="telephone">Telephone:</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+1 (123) 456-7890" required />
+            </section>
+
+            <!-- Section for address -->
+            <section class="address">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="5" cols="40" placeholder="Enter your address"
+                    required></textarea>
+            </section>
+
+            <!-- Section for PIN/Postal code -->
+            <section class="postalCode">
+                <label for="postal_code">PIN/Postal Code:</label>
+                <input type="text" id="postal_code" name="postal_code" placeholder="Enter your PIN/Postal Code"
+                    required />
+            </section>
+
+            <!-- Section for city -->
+            <section class="city">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required />
+            </section>
+
+            <!-- Section for Province -->
+            <section class="province">
+                <label for="province">Province/State:</label>
+                <input type="text" id="province" name="province" placeholder="Enter your province or state"
+                    required />
+            </section>
+
+            <section class="orderButton">
+                <!-- Button to submit the form -->
+                <button type="submit">Order Now</button>
+            </section>
+          </form>
+          
+    </main>
+    <!-- Global Footer Using Javascript -->
+</body>
+</html>

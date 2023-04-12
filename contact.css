@@ -1,0 +1,176 @@
+/* Define custom CSS variables */
+:root {
+    --main-color: rgb(29, 33, 253);
+    --main-gradient: linear-gradient(
+      90deg,
+      rgba(4, 7, 152, 1) 38%,
+      rgba(230, 14, 14, 0.9977240896358543) 39%,
+      rgba(235, 97, 97, 1) 95%,
+      rgba(242, 232, 232, 1) 99%
+    );
+  }
+  
+  /* Set base font size for the page */
+  html {
+    font-size: 62.5%;
+  }
+  
+  /* Apply styles to the body element */
+  body {
+    font-size: 1.6rem;
+    background: var(--main-color);
+    background: var(--main-gradient);
+    background-image: url("../assets/Pepsi_form.png");
+    color: white;
+  }
+  
+  /* Apply styles to the header element */
+  .header {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+  }
+  
+  /* Apply styles to the menu element */
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 0;
+  }
+  
+  .menu > li {
+    width: 100%;
+  }
+  
+  /* Apply styles to the contact link in the menu */
+  .contact {
+      color: #0055cc;
+  }
+  
+  /* Apply styles to the menu links on hover */
+  .home:hover,
+  .about:hover,
+  .contact:hover,
+  .product:hover {
+    color: #0055cc;
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+  
+  /* Apply styles to the footer element */
+  footer {
+    background-color: black;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  /* Apply styles to all links */
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Apply styles to links on hover */
+  a:hover {
+    padding: 0 2rem;
+  }
+  
+  /* Apply styles to the footer menu links on hover */
+  footer > menu > li:hover {
+    cursor: pointer;
+    padding: 0 2rem;
+  }
+  
+  /* Apply styles to the footer menu */
+  footer > menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Apply styles to the social media menu in the footer */
+  footer > .socialMediaMenu {
+    width: 30%;
+    margin: auto;
+  }
+  
+  /* Apply styles to the contact menu in the footer */
+  footer > .contactMenu {
+    width: 50%;
+    margin: auto;
+  }
+  
+  /* Apply styles to the form element */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #0055cc;
+    background-color: white;
+    padding: 2rem;
+  }
+  
+  /* Apply styles to the fieldset element */
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Apply styles to the legend element */
+  legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Apply styles to the sections within the form */
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  /* Apply styles to the label elements within the form */
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Apply styles to various form input types */
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+
+button[type="submit"] {
+  background-color: #0077ff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0055cc;
+}
